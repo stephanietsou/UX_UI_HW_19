@@ -1,12 +1,21 @@
 $(document).ready(function(){
-    // $(".logo").hover(function(){
-    //     $(".logo").addClass(".rotate");
-    // });
-
+    $("button").hover(function () {
+        $(this).addClass("rotate");
+    }, function () {
+        $(this).removeClass("rotate");
+    });
     $(".intro").hover(function(){
-        $("h1").addClass(".green");
+        $(this).addClass("green");
+    }, function () {
+        $(this).removeClass("green");
     })
 
-
+    $(".inline-block").on( {
+        mouseenter: function() {
+            $(this).css({
+                "font-style": "bold"
+            });
+        }
+    });
 
 }); //end of document.ready function

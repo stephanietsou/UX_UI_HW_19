@@ -23,6 +23,7 @@ body {
     vertical-align: top;
 }
 
+
 .navigation nav ul {
     display: flex;
     list-style: none;
@@ -39,6 +40,16 @@ body {
 .navigation nav ul li a {
     text-decoration: none;
     color: #1551B1;
+}
+
+.navigation nav ul li a:hover {
+    /* font-weight: 500; */
+    /* text-decoration: underline;
+    text-decoration-color: #EADBB4;
+    text-decoration-thickness: 2px; */
+    padding-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #EADBB4;
 }
 
 .logo {
@@ -206,9 +217,9 @@ button a:active {
     align-self: center;
 }
 
-.workGrid div img {
+/* .workGrid div img {
     border-radius: 10px;
-}
+} */
 
 .workGrid div:nth-of-type(2) {
     grid-column: 2/3;
@@ -255,9 +266,12 @@ button a:active {
     font-weight: bolder;
 }
 
+.green {
+    color: green;
+}
 .rotate {
-    transform: rotate(360deg);
-    border: 1px solid blue;
+    transform: rotate(180deg);
+    /* border: 1px solid blue; */
 }
 
 footer {

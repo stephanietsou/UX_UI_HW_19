@@ -35,22 +35,40 @@ body {
 
 .navigation nav ul li {
     margin-left: 3vw;
+    
 }
 
 .navigation nav ul li a {
+    position: relative;
     text-decoration: none;
     color: #1551B1;
 }
+/* creating underline for nav items */
 
-.navigation nav ul li a:hover {
-    /* font-weight: 500; */
-    /* text-decoration: underline;
-    text-decoration-color: #EADBB4;
-    text-decoration-thickness: 2px; */
+/* .navigation nav ul li a:hover {
     padding-bottom: 4px;
     border-bottom-style: solid;
     border-bottom-color: #EADBB4;
+    transition: all 0.3s ease-in-out;
+} */
+
+.navigation nav ul li a:before {
+    content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #EADBB4;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
+
+.navigation nav ul li a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
 
 .logo {
     padding-left: 5vw;
@@ -68,11 +86,6 @@ section {
     padding: 7vh;
     /* background-color: aqua; */
 }
-
-/* .heroImg {
-    border: solid red;
-    
-} */
 
 h1 {
     color: #1551B1;

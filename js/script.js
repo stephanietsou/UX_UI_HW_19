@@ -18,4 +18,9 @@ $(document).ready(function(){
         }
     });
 
+    // $( "h1" ).clone().appendTo( document.body); 
+// $( window ).scroll(function() {
+//   $( ".profile" ).css( "display", "inline" ).fadeOut( "slow" );
+// });
+
 }); //end of document.ready function
